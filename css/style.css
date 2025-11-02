@@ -1,0 +1,222 @@
+html body {
+    text-align: center;
+}
+
+
+
+/* SERVICE */
+.serviceTitle {
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.serviceContent {
+    /* Removed height: 100% and other properties that conflict with the card layout */
+    font-size: 22px;
+    text-align: center;
+    /* Centering the list */
+    margin-bottom: 2rem;
+    /* Adding space below the list */
+    letter-spacing: 0.3rem;
+}
+
+.serviceList {
+    font-style: italic;
+    list-style: none;
+    /* Removing default list bullets */
+    padding: 0;
+    /* Removing default padding */
+    font-size: 22px;
+}
+
+/* This is the main flex container for the cards */
+.serviceCard {
+    display: flex;
+    justify-content: center;
+    /* Centering the cards horizontally */
+    gap: 4rem;
+    /* Adding space between the cards */
+    flex-wrap: wrap;
+    /* Allowing cards to wrap on smaller screens */
+    padding: 2rem;
+}
+
+.cardContainer {
+    width: 24rem;
+    /* Set width on the container */
+    height: 24rem;
+    perspective: 1000px;
+    border-radius: 10px;
+}
+
+.cardFlip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cardContainer:hover .cardFlip {
+    transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    outline: black solid 2px;
+}
+
+.cardFront {
+    z-index: 2;
+}
+
+.cardBack {
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.cardImg {
+    width: 100%;
+    height: 150px;
+    /* Fixed height for the image */
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    /* Allows the body to fill the remaining space */
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    /* Adjusted font size */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+    /* Added margin */
+}
+
+.cardText {
+    font-style: italic;
+    font-size: 1rem;
+    /* Adjusted font size */
+}
+
+/* WORKS */
+.project {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.myIntro {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: left;
+    margin-left: 3rem;
+    padding-left: 2rem;
+}
+.subIntro{
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+    font-style: italic;
+}
+
+.skills {
+    text-align: center;
+    padding-left: 2rem;
+    letter-spacing: 0.1rem;
+}
+.skillTitle {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.myPicture {
+    position: absolute;
+    top: 81px;
+    right: 0;
+    width: 10rem;
+    text-align: left;
+    z-index: 10000;
+    transition: transform 0.3s ease z-index 0s ease 0.3s;
+    outline: black solid 3px;
+    border-radius: 10px;
+}
+.myPicture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.subTitle {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.projectList {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    perspective: 1000px;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    outline: black solid 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    transition: 2s all ease;
+}
+
+
+/* ABOUT */
+.logoNum {
+    font-family: cursive;
+    font-weight: bold;
+    outline: black solid 4px;
+    border-radius: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-right: 47%;
+    margin-left: 47%;
+}
+
+.theme {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+

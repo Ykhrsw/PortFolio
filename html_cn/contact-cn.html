@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/commonPage.css">
+    <link rel="stylesheet" href="../css/contactPage.css">
+</head>
+
+<!-- index.htmlに挿入 -->
+
+<body>
+    <img src="../pic/backGround.jpg" alt="backGround" class="backGround">
+    <header>
+        <nav>
+            <h3>
+                <a href="index-cn.html">Home</a>
+                <a href="about-cn.html">About</a>
+                <a href="works-cn.html">Works</a>
+                <a href="service-cn.html">Service</a>
+                <a href="contact-cn.html">Contact</a>
+            </h3>
+        </nav>
+
+        <section class="site-header">
+            <div class="lang-dropdown">
+                <label for="language-select">Language:</label>
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="ja">日本語</option>
+                    <option value="cn">中文</option>
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+        </section>
+
+    </header>
+
+    <section id="contactTitle" class="contact">
+        <div class="contactWrapper">
+            <h1 class="contact-title">联系我们</h1>
+            <div class="contact-description">
+                <div>如有意见或建议，请随时与我联系。</div>
+                <div>请在以下表单中填写必要信息。</div>
+                <div>如果超过两天没有回复，请再次与我联系。</div>
+            </div>
+            <form id="contactForm">
+                <img src="../pic/moon.jpg" alt="moonBack" class="moonBack">
+                <label for="name" class="contactLabel">
+                    <span class="contactLabel-text">姓名</span><br>
+                    <input class="input" type="text" name="from_name" id="name" placeholder="王维庭" required />
+                </label>
+                <label for="email" class="contactLabel">
+                    <span class="contactLabel-text">邮箱</span><br>
+                    <input class="input" type="email" name="reply_to" id="email" placeholder="example@example.com"
+                        required />
+                </label>
+                <label for="inquiry" class="contactLabel">
+                    <span class="contactLabel-text">咨询内容</span></label><br>
+                <select name="inquiry" id="inquiry" required class="contactLabel-text">
+                    <option value="">请选择</option>
+                    <option value="general">一般咨询</option>
+                    <option value="technical">技术咨询</option>
+                    <option value="billing">账单咨询</option>
+                    <option value="others">其他</option>
+                </select>
+                <br>
+                <label for="message" class="contactLabel">
+                    <span class="contactLabel-text">留言内容</span><br>
+                    <textarea class="input" name="message" id="message" placeholder="详细内容" required cols="100"
+                        rows="6"></textarea>
+                </label>
+                <button type="submit" id="submitBtn" class="submitBtn">发送</button>
+                <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <p>© 2025 Yuki Hirasawa</p>
+        <div class="social">
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- index.htmlに挿入 -->
+
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

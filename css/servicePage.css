@@ -1,0 +1,120 @@
+.serviceTitle {
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.serviceContent {
+    /* Removed height: 100% and other properties that conflict with the card layout */
+    text-align: center;
+    /* Centering the list */
+    margin-bottom: 2rem;
+    /* Adding space below the list */
+    letter-spacing: 0.3rem;
+}
+
+.serviceList {
+    font-style: italic;
+    list-style: none;
+    /* Removing default list bullets */
+    padding: 0;
+    /* Removing default padding */
+    font-size: 22px;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 650px;
+    /* 任意の幅で整える */
+    padding-left: 1em;
+    /* インデント風の余白 */
+
+
+}
+
+/* This is the main flex container for the cards */
+.serviceCard {
+    display: flex;
+    justify-content: center;
+    /* Centering the cards horizontally */
+    gap: 4rem;
+    /* Adding space between the cards */
+    flex-wrap: wrap;
+    /* Allowing cards to wrap on smaller screens */
+    padding: 2rem;
+}
+
+.cardContainer {
+    width: 24rem;
+    /* Set width on the container */
+    height: 24rem;
+    perspective: 1000px;
+    border-radius: 10px;
+}
+
+.cardFlip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cardContainer:hover .cardFlip {
+    transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    outline: black solid 2px;
+}
+
+.cardFront {
+    z-index: 2;
+}
+
+.cardBack {
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.cardImg {
+    width: 100%;
+    height: 150px;
+    /* Fixed height for the image */
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    /* Allows the body to fill the remaining space */
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    /* Adjusted font size */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+    /* Added margin */
+}
+
+.cardText {
+    font-style: italic;
+    font-size: 1rem;
+    /* Adjusted font size */
+}

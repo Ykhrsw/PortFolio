@@ -1,0 +1,55 @@
+html body {
+    text-align: center;
+    padding-left: 5rem;
+    height: 100%;
+    width: auto;
+
+}
+
+.backGround {}
+
+.project {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.pageTitle {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.subTitle {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.projectList {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    perspective: 1000px;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    outline: black solid 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    transition: 2s all ease;
+}
+
+
+/* .caption {}
+
+.item {} */

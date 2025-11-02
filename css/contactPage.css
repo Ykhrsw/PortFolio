@@ -1,0 +1,104 @@
+/* コンタクトに対してのCSS */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contact form {
+    outline: black solid 4px !important;
+    background: transparent;
+    z-index: 100;
+    position: relative;
+    border-radius: 12px;
+    overflow: auto;
+    text-align: center;
+}
+
+
+.contactWrapper {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    justify-self: center;
+    align-items: center;
+}
+
+.contact form .moonBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.contact-title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.contact-description {
+    text-align: center;
+    padding-bottom: 3rem;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 650px;
+    /* 任意の幅で整える */
+    padding-left: 6.5em;
+
+}
+
+.contactLabel {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contactLabel input {
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.contactLabel textarea {
+    width: 80%;
+    height: 120px;
+}
+
+.contactLabel-text {
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    height: 30px;
+}
+
+.input {
+    background-color: #fff;
+}
+
+.submitBtn {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}

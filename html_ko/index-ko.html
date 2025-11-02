@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuki Hirasawa</title>
+    <link rel="stylesheet" href="../css/commonPage.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <img src="../pic/backGround.jpg" alt="backGround" class="backGround">
+    <header id="header" class="header">
+        <nav>
+            <h3 id="pageTitle" class="pageTitle">
+                <a href="index-ko.html">Home</a>
+                <a href="about-ko.html">About</a>
+                <a href="works-ko.html">Works</a>
+                <a href="service-ko.html">Service</a>
+                <a href="contact-ko.html">Contact</a>
+            </h3>
+        </nav>
+
+        <section class="site-header">
+            <div class="lang-dropdown">
+                <label for="language-select">Language:</label>
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="ja">日本語</option>
+                    <option value="cn">中文</option>
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+        </section>
+
+    </header>
+
+    <section>
+        <div>
+            <div class="myIntro">
+                <h1>Yuki Hirasawa ｜ Web Engineer</h1>
+                <p class="subIntro">당신의 상상을 그대로 형태로</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="skills">
+        <div class="skillTitle">프로그래밍 언어</div>
+        <div>
+            <span class="padding">HTML / CSS / JavaScript / PHP / Python</span>
+        </div>
+        <div class="skillTitle">취미</div>
+        <div>
+            <span class="padding">여행 / 독서 / 운동、스포츠</span><br>
+        </div>
+    </div>
+
+    <section class="about">
+        <h1 class="aboutMe">내 기준</h1>
+
+        <div class="mySelf">
+            <div class="myRules">
+                <div class="logoNum">1</div>
+                <div class="theme">
+                    <strong>"지금 이순간"</strong>이 가장 젊다!
+                </div>
+            </div>
+
+            <div class="myRules">
+                <div class="logoNum">2</div>
+                <div class="theme">
+                    <strong>어제의 나</strong>보다 1단계 위로
+                </div>
+
+                <div class="myRules">
+                    <div class="logoNum">3</div>
+                    <div class="theme">
+                        기회가 있다면, <strong>언제든 도전</strong>
+                    </div>
+                </div>
+
+                <div class="myRules">
+                    <div class="logoNum">4</div>
+                    <div class="theme">
+                        <strong>감사</strong>의 마음을 항상 가슴에
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h1 class="pageTitle">Works</h1>
+            <div class="projectList">
+                <div>
+                    <div class="project">
+                        <div>오미쿠지 앱</div>
+                        <a href="http://aaa.com">
+                            <figure>
+                                <figcaption class="caption"></figcaption>
+                                <img src="../pic/omikuji.jpg" alt="Omikuji" class="img">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <div>오셀로 게임</div>
+                        <a href="http://aaa.com" class="link">
+                            <figure>
+                                <figcaption class="caption"></figcaption>
+                                <img src="../pic/othello.jpg" alt="Othello Game" class="img">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <div>처음으로 개발한 웹사이트</div>
+                        <a href="https://malaysia-housing-oam3.vercel.app/" class="link">
+                            <figure>
+                                <figcaption class="caption"></figcaption>
+                                <img src="../pic/luxuryHousingMalaysiaPF.png" alt="Luxury Housing Malaysia" class="img">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="projectList">
+                    <div>
+                        <div class="project">그동안 직접 제작한 프로젝트와 결과물입니다.</div>
+                        <div class="padding">
+                            <div class="item">
+                                <a href="http://aaa.com" class="link">
+                                    <figure>
+                                        <figcaption class="caption"></figcaption>
+                                        <img src="../pic/ToDoList.jpg" alt="To Do List" class="img">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <h1 class="serviceTitle">서비스 소개</h1>
+        <div class="serviceContent">
+            <ul class="serviceList">
+                <li>다국어 UI 설계 지원</li>
+                <li>번역 품질 리뷰 및 개선 제안</li>
+                <li>해외 사용자 대상 내비게이션 설계</li>
+                <li>기술적 과제의 다국어 해석 지원</li>
+            </ul>
+        </div>
+
+        <section class="serviceCard">
+            <div class="cardContainer" id="cardOne">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="../pic/userInterface.jpg" alt="UI設計" class="cardImg">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">다국어 UI 설계 지원</h5>
+                            <p class="cardText">영어／일본어로의 표시 전환을 원활하게 수행</p>
+                            <!-- <a href="#" class="btn btn-primary">詳細はこちら</a> -->
+                        </div>
+                    </div>
+                    <div class="cardBack">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">다국어 UI 설계 지원</h5>
+                            <p class="cardText">사용자가 혼란스러워하지 않도록 문구를 설계하고, 문화적 뉘앙스를 고려한 표현 선택.
+                                → 보는 사람의 언어 배경을 고려한 “전달되는 웹” 구축 지원
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardContainer" id="cardTwo">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="../pic/kaizenReview.jpg" alt="レビューと改善" class="cardImg">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">번역 품질 리뷰 및 개선 제안</h5>
+                            <p class="cardText">자동 번역된 문면의 어색함을 체크</p>
+                            <!-- <a href="#" class="btn btn-primary">詳細はこちら</a> -->
+                        </div>
+                    </div>
+                    <div class="cardBack">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">번역 품질 리뷰 및 개선 제안</h5>
+                            <p class="cardText">오역의 지적뿐만 아니라, “자연스럽게 전달되는 표현”으로의 리ライト
+                                → 사용자 신뢰도를 높이는 언어 면에서의 UX 지원
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cardContainer" id="cardThree">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="../pic/navigation.jpg" alt="ナビゲーション設計" class="cardImg">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">해외 사용자 대상 내비게이션 설계</h5>
+                            <p class="cardText">메뉴나 버튼의 배치를 “문화권별 UI 관습”에 맞춰 조언</p>
+                            <!-- <a href="#" class="btn btn-primary">詳細はこちら</a> -->
+                        </div>
+                    </div>
+                    <div class="cardBack">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">해외 사용자 대상 내비게이션 설계</h5>
+                            <p class="cardText">다른 읽기 순서 및 문자 수에 대한 대응
+                                → 글로벌 관점에서의 구조 최적화
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cardContainer" id="cardFour">
+                <div class="cardFlip">
+                    <div class="cardFront">
+                        <img src="../pic/tagengo.jpg" alt="多言語解釈サポート" class="cardImg">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">기술적 과제의 다국어 해석 지원</h5>
+                            <p class="cardText">영어권의 문서나 에러 메시지의 독해 지원</p>
+                            <!-- <a href="#" class="btn btn-primary">詳細はこちら</a> -->
+                        </div>
+                    </div>
+                    <div class="cardBack">
+                        <div class="cardBody">
+                            <h5 class="cardTitle">기술적 과제의 다국어 해석 지원</h5>
+                            <p class="cardText">일본어 환경에서의 문제 해결의 다리 역할
+                                → 네트워크 트러블나 환경 정비에도 강점이 발휘됨
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="site-footer">
+            <p>© 2025 Yuki Hirasawa</p>
+            <div class="social">
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </footer>
+
+        <script src="../js/app.js"></script>
+</body>
+
+</html>

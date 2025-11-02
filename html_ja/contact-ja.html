@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/commonPage.css">
+    <link rel="stylesheet" href="../css/contactPage.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<body>
+    <img src="../pic/backGround.jpg" alt="backGround" class="backGround">
+    <header>
+        <nav>
+            <h3>
+                <a href="index-ja.html">Home</a>
+                <a href="about-ja.html">About</a>
+                <a href="works-ja.html">Works</a>
+                <a href="service-ja.html">Service</a>
+                <a href="contact-ja.html">Contact</a>
+            </h3>
+        </nav>
+
+        <section class="site-header">
+            <div class="lang-dropdown">
+                <label for="language-select">Language:</label>
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="ja">日本語</option>
+                    <option value="cn">中文</option>
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+        </section>
+
+    </header>
+
+    <section id="contactTitle" class="contact">
+        <div class="contactWrapper">
+            <h1 class="contact-title">お問い合わせページ</h1>
+            <div class="contact-description">
+                <div>ご意見・ご要望がございましたら、お気軽にお問い合わせください。</div>
+                <div>以下のフォームに必要事項をご記入お願いいたします。</div>
+                <div>2日以上経っても返信がない場合は、恐れ入りますが再度、ご連絡ください。</div>
+            </div>
+            <form id="contactForm">
+                <img src="../pic/moon.jpg" alt="moonBack" class="moonBack">
+                <label for="name" class="contactLabel">
+                    <span class="contactLabel-text">名前</span><br>
+                    <input class="input" type="text" name="from_name" id="name" placeholder="山田太郎" required />
+                </label>
+                <label for="email" class="contactLabel">
+                    <span class="contactLabel-text">メール</span><br>
+                    <input class="input" type="email" name="reply_to" id="email" placeholder="example@example.com"
+                        required />
+                </label>
+                <label for="inquiry" class="contactLabel">
+                    <span class="contactLabel-text">お問い合わせ内容</span></label><br>
+                <select name="inquiry" id="inquiry" required class="contactLabel-text">
+                    <option value="">選択してください</option>
+                    <option value="general">一般的な問い合わせ</option>
+                    <option value="technical">技術的な問い合わせ</opation>
+                    <option value="billing">請求に関する問い合わせ</option>
+                    <option value="others">その他</option>
+                </select>
+                <br>
+                <label for="message" class="contactLabel">
+                    <span class="contactLabel-text">メッセージ</span><br>
+                    <textarea class="input" name="message" id="message" placeholder="詳細をご入力ください" required cols="100"
+                        rows="6"></textarea>
+                </label>
+                <button type="submit" id="submitBtn" class="submitBtn">送信する</button>
+                <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <p>© 2025 Yuki Hirasawa</p>
+        <div class="social">
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- index.htmlに挿入 -->
+
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
